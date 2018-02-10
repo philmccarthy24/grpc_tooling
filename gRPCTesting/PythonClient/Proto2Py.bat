@@ -1,0 +1,2 @@
+python -m grpc_tools.protoc -I../gRPCService1 --python_out=. --grpc_python_out=. ../gRPCService1/gRPCService1.proto
+python -m grpc_tools.protoc -I../gRPCService2 --python_out=. --grpc_python_out=. ../gRPCService2/gRPCService2.proto

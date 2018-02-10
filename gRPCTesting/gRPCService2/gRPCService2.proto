@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package volcano;
+
+service WCSXform {
+	rpc TransformCoord (WCS) returns (PointResult);
+}
+
+message PointResult {
+	string ident = 1;
+	double tolerance = 2;
+	int32 minErr = 3;
+	int32 maxErr = 4;
+}
+
+message WCS {
+	string name = 1;
+}
