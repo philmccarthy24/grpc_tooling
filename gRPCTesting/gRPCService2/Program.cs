@@ -22,8 +22,8 @@ namespace gRPCService2
             server.Start();
 
             Console.WriteLine("WCSXform server listening on port " + port);
-            Console.WriteLine("Press any key to stop the server...");
-            Console.ReadKey();
+            Console.WriteLine("Press enter to stop the server...");
+            Console.Read();
 
             server.ShutdownAsync().Wait();
         }

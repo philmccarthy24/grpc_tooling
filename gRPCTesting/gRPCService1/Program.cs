@@ -22,8 +22,8 @@ namespace gRPCService1
             server.Start();
 
             Console.WriteLine("PointFinder server listening on port " + port);
-            Console.WriteLine("Press any key to stop the server...");
-            Console.ReadKey();
+            Console.WriteLine("Press enter to stop the server...");
+            Console.Read();
 
             server.ShutdownAsync().Wait();
         }
